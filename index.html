@@ -7,8 +7,10 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="Content-Security-Policy" content="upgrade-insecure-requests">
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+    
 
     <title>나만의 동기부여 홈화면 만들기</title>
+    <script src="index.js"></script>
 
     <style>
        @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@500&display=swap');
@@ -40,7 +42,7 @@
         .time {
                 font-size: 1rem;
                 line-height: 1.5;
-                color:#ffffff;
+                color:#FFD91C;
                 text-align: center;
                 margin-bottom: 0.2rem;
         }
@@ -75,13 +77,17 @@
             padding-right:1rem;
             margin: 0 auto;
         }
-        #paragraph2 .comment{
+        #paragraph2 .content{
             text-align: left;
             font-size: 3vw;
-            line-height: 1.65;
+            line-height: 1.45;
             font-weight: 500;
             letter-spacing: -0.03rem;
             color: #ffffff;
+        }
+        #paragraph2 .author{
+            font-size: 2vw;
+            color: #FFD91C;
         }
     </style>
     <script>
@@ -90,15 +96,18 @@
 
 <body>
     <div class="boxtype1">
-        <div class="time">12:00</div>
+        <div id="time" class="time">12:00</div>
         <div class="texthere">schdule</div>
         <div class="todo">study html this week</div>
     </div>
 
     <div id="paragraph2" class="boxtype2">
-            <span class="comment">
-                Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed quis malesuada magna. Donec ornare nulla est, et lobortis diam varius accumsan.
-            </span>
+        <div id="author" class="author">
+            none
+        </div>
+        <span id="content" class="content">
+            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed quis malesuada magna. Donec ornare nulla est, et lobortis diam varius accumsan.
+        </span>
     </div>
     
 </body>
